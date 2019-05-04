@@ -370,11 +370,16 @@
   #define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
+  // Autotune result (2019-05-04, michiel@fokke.org)
+  #define DEFAULT_Kp 55.88
+  #define DEFAULT_Ki 7.33
+  #define DEFAULT_Kd 106.42
+  
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // oXis Kossel k800 XL
-  #define DEFAULT_Kp 22.04
-  #define DEFAULT_Ki 1.65
-  #define DEFAULT_Kd 73.67
+  //#define DEFAULT_Kp 22.04
+  //#define DEFAULT_Ki 1.65
+  //#define DEFAULT_Kd 73.67
 
   // Kossel k800 XL
   //#define DEFAULT_Kp 22.25
@@ -412,7 +417,7 @@
  */
 //#define PIDTEMPBED
 
-//#define BED_LIMIT_SWITCHING
+#define BED_LIMIT_SWITCHING
 
 /**
  * Max Bed Power
@@ -426,11 +431,16 @@
 
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
+  // Autotune result (2019-05-04, michiel@fokke.org)
+#define DEFAULT_bedKp 435.80
+#define DEFAULT_bedKi 22.45
+#define DEFAULT_bedKd 2115.27
+  
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 15.00
-  #define DEFAULT_bedKi .04
-  #define DEFAULT_bedKd 305.4
+  //#define DEFAULT_bedKp 15.00
+  //#define DEFAULT_bedKi .04
+  //#define DEFAULT_bedKd 305.4
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
