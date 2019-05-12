@@ -104,7 +104,7 @@
   /**
    * As described above, except for the bed (M140/M190/M303).
    */
-  #define WATCH_BED_TEMP_PERIOD 180                // Seconds (default: 60)
+  #define WATCH_BED_TEMP_PERIOD 600               // Seconds (default: 60)
   #define WATCH_BED_TEMP_INCREASE 2               // Degrees Celsius
 #endif
 
