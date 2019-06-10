@@ -431,10 +431,10 @@
 
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-  // Autotune result (2019-05-04, michiel@fokke.org)
-#define DEFAULT_bedKp 435.80
-#define DEFAULT_bedKi 22.45
-#define DEFAULT_bedKd 2115.27
+  // Autotune result (2019-06-10, michiel@fokke.org)
+#define DEFAULT_bedKp 429.71
+#define DEFAULT_bedKi 21.07
+#define DEFAULT_bedKd 2191.33
   
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
